@@ -85,20 +85,5 @@ extension UIView {
 
         return color
     }
-
-//    func setColor(point: CGPoint, color: UIColor) {
-//        let elementSize = 5
-//
-//        guard let context = UIGraphicsGetCurrentContext()
-//            else {
-//                print("Error getting current context")
-//                return
-//        }
-//
-//        context.setFillColor(color.cgColor)
-//        context.fill(CGRect(x: point.x, y: point.y, width: CGFloat(elementSize), height: CGFloat(elementSize)))
-//    }
-    
-    
 }
 
