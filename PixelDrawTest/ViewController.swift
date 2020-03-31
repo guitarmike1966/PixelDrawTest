@@ -24,23 +24,47 @@ class Canvas: UIView {
         
         // context.setStrokeColor(UIColor.red.cgColor)
         // context.stroke(CGRect(x: 50, y: 50, width: 50, height: 50))
-        
-        for x in 50..<150 {
-            // context.stroke(CGRect(x: x, y: 200, width: 2, height: 2))
-            setPixel(context: context,x: x,y: 200,color: UIColor.yellow)
+
+        for y in 0..<20 {
+
+            for x in 50..<250 {
+                // context.stroke(CGRect(x: x, y: 200, width: 2, height: 2))
+                setPixel(context: context,x: x,y: 200+y,color: UIColor.red)
+            }
+
+            for x in 50..<250 {
+                // context.stroke(CGRect(x: x, y: 200, width: 2, height: 2))
+                setPixel(context: context,x: x,y: 220+y,color: UIColor.orange)
+            }
+
+            for x in 50..<250 {
+                // context.stroke(CGRect(x: x, y: 200, width: 2, height: 2))
+                setPixel(context: context,x: x,y: 240+y,color: UIColor.yellow)
+            }
+
+            for x in 50..<250 {
+                // context.stroke(CGRect(x: x, y: 200, width: 2, height: 2))
+                setPixel(context: context,x: x,y: 260+y,color: UIColor.green)
+            }
+
+            for x in 50..<250 {
+                // context.stroke(CGRect(x: x, y: 200, width: 2, height: 2))
+                setPixel(context: context,x: x,y: 280+y,color: UIColor.blue)
+            }
+
+            for x in 50..<250 {
+                // context.stroke(CGRect(x: x, y: 200, width: 2, height: 2))
+                setPixel(context: context,x: x,y: 300+y,color: UIColor.purple)
+            }
         }
 
-        for x in 50..<200 {
-            // context.stroke(CGRect(x: x, y: 200, width: 2, height: 2))
-            setPixel(context: context,x: x,y: 250,color: UIColor.red)
-        }
     }
     
     private func setPixel(context: CGContext, x: Int, y: Int, color: UIColor)
     {
         context.setLineWidth(1)
         context.setStrokeColor(color.cgColor)
-        context.stroke(CGRect(x: x, y: y, width: 1, height: 1))
+        context.stroke(CGRect(x: CGFloat(x), y: CGFloat(y), width: 0.5, height: 0.5))
     }
 
 }
